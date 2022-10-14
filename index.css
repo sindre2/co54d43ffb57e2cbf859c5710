@@ -1,0 +1,68 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titleOne {
+  color: white;
+  margin-bottom: 0;
+}
+
+#titleTwo {
+  color: #10b981;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+h3 {
+  color: #d5d4d8;
+  opacity: 70%;
+  margin-top: 0;
+}
+
+#thisButton {
+  background-color: #10b981;
+  color: white;
+  padding: 12px;
+
+  border-radius: 8px;
+  border: none;
+}
+
+#thisButton:hover {
+  background-color: darkblue;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+  align-items: center;
+}
+
+#passBoxOne,
+#passBoxTwo {
+  margin: 0px 20px 0px 0px;
+  background-color: #273549;
+  color: #55f991;
+
+  padding: 5px 20px;
+  border-radius: 4px;
+  height: 40px;
+  width: 211px;
+
+  text-align: center;
+  border: none;
+}
+
+hr {
+  margin: 40px auto;
+  color: gray;
+  opacity: 20%;
+  max-width: 440px;
+}
