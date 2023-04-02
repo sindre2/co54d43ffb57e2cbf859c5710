@@ -4,7 +4,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let passOneEl = document.getElementById("passBoxOne");
 let passTwoEl = document.getElementById("passBoxTwo");
 
-
+//  Random number generator for picking random values in the "characters" array.
 function genPass() 
 {
     passOneEl.textContent = "";
@@ -21,7 +21,6 @@ function genPass()
 }
 
 // Function for copying a html-element. It does this by first creating another input element. The new input element is then filled with the content of either password 1 or 2 and set to the value of a string. Then the element is selected and copied. Finally the input element is deleted. //
-
 function copyText(htmlElement)
 {
     if (!htmlElement) {
@@ -46,15 +45,21 @@ function copyText(htmlElement)
 function copyOne()
 {
     copyText(document.querySelector("#passBoxOne"));
-    
+    showMessage("Copied!");
 }
 
 
 function copyTwo()
 {
     copyText(document.querySelector("#passBoxTwo"));
-    
+    showMessage("Copied!");
 }
 
 
-
+function showMessage(text) {
+    var message = document.querySelector(".message");
+    message.textContent = text;
+    setTimeout(function () {
+      message.textContent = "";
+    }, 3000);
+}

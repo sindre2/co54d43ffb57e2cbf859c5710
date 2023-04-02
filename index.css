@@ -34,6 +34,7 @@ h3 {
 }
 
 #thisButton:hover {
+  cursor: pointer;
   background-color: darkblue;
 }
 
@@ -59,10 +60,33 @@ h3 {
   text-align: center;
   border: none;
 }
+#passBoxOne:hover,
+#passBoxTwo:hover {
+  cursor: pointer;
+  background-color: black;
+}
 
 hr {
   margin: 40px auto;
   color: gray;
   opacity: 20%;
   max-width: 440px;
+}
+
+.container {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+}
+
+.message {
+  position: relative;
+  top: 95px;
+  right: 10px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #10b981;
+  color: #1f2937;
+  padding: 2px 12px;
+  border-radius: 15px;
 }
